@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  neo4j_upload:
+    container_name: neo4j_upload
+    build:
+      context: .
+      dockerfile: Dockerfile.neo4j_upload
+    volumes:
+      - ./company_data:/company_data
+      - ./config:/config

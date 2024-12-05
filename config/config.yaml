@@ -1,0 +1,8 @@
+seleniumgrid:
+  host: http://192.168.1.43
+  port: 4444
+neo4j:
+  host: bolt://192.168.1.42
+  port: 7688 # farklı bir port kullanılıyorsa değiştirilmeli
+  user: neo4j
+  password: yourpassword

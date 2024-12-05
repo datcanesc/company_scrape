@@ -1,0 +1,10 @@
+# Dockerfile for neo4_upload.py
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY neo4j_upload.py requirements_neo4j.txt ./
+
+RUN pip install -r requirements_neo4j.txt
+
+CMD ["python", "neo4j_upload.py"]

@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  company_finder:
+    container_name: company_finder
+    build:
+      context: .
+      dockerfile: Dockerfile.company_finder
+    volumes:
+      - ./company_urls_data:/company_urls_data
+      - ./config:/app/config

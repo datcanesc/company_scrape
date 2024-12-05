@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  company_scrape:
+    container_name: company_scrape
+    build:
+      context: .
+      dockerfile: Dockerfile.company_scrape
+    volumes:
+      - ./company_data:/company_data
+      - ./company_urls_data:/company_urls_data
+      - ./config:/app/config
